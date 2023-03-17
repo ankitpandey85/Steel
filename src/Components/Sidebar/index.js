@@ -128,7 +128,7 @@ export default function Sidebar() {
         </DrawerHeader>
         <Divider />
         <List>
-        <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>{navigate('/profile')}}>
+        <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>{navigate('/')}}>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -186,26 +186,6 @@ export default function Sidebar() {
                  <BiDirections />
                 </ListItemIcon>
                 <ListItemText primary="Biding" sx={{ opacity: open ? 1 : 0 }} />
-              </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>{navigate('/viewbiding/:id')}}>
-              <ListItemButton
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? 'initial' : 'center',
-                  px: 2.5,
-                }}
-              >
-                <ListItemIcon
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : 'auto',
-                    justifyContent: 'center',
-                  }}
-                >
-                 <BiUser/>
-                </ListItemIcon>
-                <ListItemText primary="View Biding" sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
         </List>
